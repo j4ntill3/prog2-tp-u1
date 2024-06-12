@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'JackassFont';
+    src: 
+        url('../font/Helvetica.ttf') format('truetype'),
+        url('../font/Helvetica.otf') format('opentype'),
+        url('../font/Helvetica.woff') format('woff'),
+        url('../font/Helvetica.woff2') format('woff2'),
+    ;     
+}
+
+* {
+    font-family: 'JackassFont';
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cont-videos{
+    padding: 1rem;    
+}
+
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	position: relative;
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+#cont-contact-form {
+    width: 100%;
+}
+
+header {
+    background: black;
+    width: 100%;
+}
+
+#cont-text-portada-bottom span{
+    margin-bottom: 1.5rem;
+}
+
+#portada {
+    width: 100%;
+}
+
+.cont-img-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cont-img-team span{
+    margin: 15% 0rem 15% 0rem; 
+}
+
+#cont-img-warning {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+#cont-img-warning img {
+    width: 90%;
+}
+
+
+#cont-span-warning{
+    display: flex;
+    justify-content: center;
+}
+
+#cont-span-warning span {
+    color: red;
+    margin-bottom: 1.5rem;
+}
+
+#cont-span-section{
+    display: flex;
+    justify-content: center;
+}
+
+.cont-img-team img{
+    padding: 0.5rem;
+}
+
+#cont-span-section span{
+    color: white;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+nav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    flex-grow: 1;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    padding: 0.25rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: white;
+}
+
+li a:focus {
+    outline: none;
+}
+
+li a:visited {
+    color: white;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer p {
+    text-align: center;
+}
+
+#cont-team-jackass{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#cont-text-warning {
+    text-align: center;
+}
+
+#cont-text-portada-bottom{
+    text-align: center;
+}
+
+#cont-span-warning {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+h2 {
+    margin-top: 1.5rem;
+}
+
+/* Estilos para pantallas extra pequeñas (XS) */
+@media (max-width: 575.98px) {
+
+    li{
+        font-size: 1.3rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 2rem;
+    }
+
+    #cont-span-section span{
+        font-size: 2rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 1.3rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 1rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 1rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 1.3rem; 
+    }
+
+    footer{
+        min-height: 4.5rem;
+        font-size: 1rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 2.5rem 0rem 2.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 2.5rem 0rem 2.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 2.5rem 0rem 2.5rem;
+    }
+
+    #mensaje{
+        height: 4rem;
+    }
+
+    #contact-button{
+        width: 3rem;
+        height: 2rem;
+    }
+
+    .cont-img-team span{
+        font-size: 1.5rem;
+    }
+
+    .cont-img-team img{
+        max-width: 270px;
+    }
+
+    .video-responsive {
+        width: 100%;
+    }
+
+}
+
+/* Estilos para pantallas pequeñas (SM) */
+@media (min-width: 576px) {
+
+    li{
+        font-size: 1.5rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 2.5rem;
+    }
+
+    #cont-span-section span{
+        font-size: 2.5rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 1.5rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 1.2rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 1.2rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 1.5rem; 
+    }
+
+    footer{
+        min-height: 5.5rem;
+        font-size: 1.1rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 3.5rem 0rem 3.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 3.5rem 0rem 3.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 3.5rem 0rem 3.5rem;
+    }
+
+    #mensaje{
+        height: 6rem;
+    }
+
+    #contact-button{
+        width: 5rem;
+        height: 2.5rem;
+    }
+
+    .cont-img-team span{
+        font-size: 2.3rem;
+    }
+
+    .cont-img-team img{
+        max-width: 250px;
+    }
+    
+}
+
+/* Estilos para pantallas medianas (MD) */
+@media (min-width: 768px) {
+
+    li{
+        font-size: 1.7rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 3rem;
+    }
+
+    #cont-span-section span{
+        font-size: 3rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 1.7rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 1.4rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 1.4rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 1.7rem; 
+    }
+
+    footer{
+        min-height: 6.5rem;
+        font-size: 1.2rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 4.5rem 0rem 4.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 4.5rem 0rem 4.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 4.5rem 0rem 4.5rem;
+    }
+
+    #mensaje{
+        height: 8rem;
+    }
+
+    #contact-button{
+        width: 6rem;
+    }
+
+    .cont-img-team span{
+        font-size: 1.5rem;
+    }
+
+    .cont-img-team img{
+        max-width: 300px;
+    }
+
+
+}
+
+/* Estilos para pantallas grandes (LG) */
+@media (min-width: 992px) {
+
+    li{
+        font-size: 1.9rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 3.5rem;
+    }
+
+    #cont-span-section span{
+        font-size: 3.5rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 1.9rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 1.7rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 1.6rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 1.9rem; 
+    }
+
+    footer{
+        min-height: 7.5rem;
+        font-size: 1.3rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 5.5rem 0rem 5.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 5.5rem 0rem 5.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 5.5rem 0rem 5.5rem;
+    }
+
+    #mensaje{
+        height: 10rem;
+    }
+
+    #contact-button{
+        width: 7rem;
+    }
+
+    .cont-img-team span{
+        font-size: 2rem;
+    }
+
+    .cont-img-team img{
+        max-width: 350px;
+    }
+
+}
+
+/* Estilos para pantallas extra grandes (XL) */
+@media (min-width: 1200px) {
+
+    li{
+        font-size: 2.1rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 4rem;
+    }
+
+    #cont-span-section span{
+        font-size: 4rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 2.1rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 1.9rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 1.8rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 2.1rem; 
+    }
+
+    footer{
+        min-height: 8.5rem;
+        font-size: 1.4rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 6.5rem 0rem 6.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 6.5rem 0rem 6.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 6.5rem 0rem 6.5rem;
+    }
+
+    #mensaje{
+        height: 12rem;
+    }
+
+    #contact-button{
+        width: 8rem;   
+    }
+
+    .cont-img-team span{
+        font-size: 2.3rem;
+    }
+
+    .cont-img-team img{
+        max-width: 400px;
+    }
+
+}
+
+@media (min-width: 1920px) {
+
+    html{
+        background-image: url('../img/jackass-logo.png');
+        background-size: 7.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        width: 1920px;
+    }
+
+    li{
+        font-size: 2.2rem;
+    }
+
+    #cont-span-warning span {
+        font-size: 5rem;
+    }
+
+    #cont-span-section span{
+        font-size: 4.5rem;
+    }
+
+    #cont-text-warning p{
+        font-size: 2.3rem;
+    }
+
+    #cont-contact-form form label{
+        font-size: 2.1rem;
+    }
+
+    #cont-contact-form form input{
+        font-size: 2rem;
+    }
+
+    #cont-text-portada-bottom p{
+        font-size: 2.3rem; 
+    }
+
+    footer{
+        min-height: 9.5rem;
+        font-size: 1.5rem;
+    }
+
+    #cont-text-warning {
+        padding: 0rem 7.5rem 0rem 7.5rem;
+    }
+
+    #cont-text-portada-bottom{
+        padding: 0rem 7.5rem 0rem 7.5rem;
+    }
+
+    #cont-contact-form form{
+        padding: 0rem 7.5rem 0rem 7.5rem;
+    }
+
+    #mensaje{
+        height: 14rem;
+    }
+
+    #contact-button{
+        width: 9rem;   
+    }
+
+    .cont-img-team span{
+        font-size: 2.6rem;
+    }
+
+    .cont-img-team img{
+        max-width: 450px;
+    }
+
+}
